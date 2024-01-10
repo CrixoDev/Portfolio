@@ -1,0 +1,129 @@
+h2 {
+    margin: 3% auto;
+    font-size: 3.4rem;
+    text-align: center;
+  }
+  
+
+.contenedor {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background-color: #c6e0f0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  word-wrap: break-word;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.timeline-item-alt .timeline-content {
+  float: right;
+}
+
+.timeline-item-alt .timeline-icon {
+  left: auto;
+  right: 50%;
+  margin-right: -25px;
+}
+
+.fa-star {
+  color: #ffd700;
+  font-size: 1.5rem;
+}
+
+.card-body {
+  background-color: #c6e0f0;
+}
+
+.neon {
+  font-family: "Montserrat", sans-serif;
+}
+
+.neon:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffd700, 0 0 20px #ffd700,
+    0 0 25px #ffd700, 0 0 30px #ffd700;
+}
+
+@media (max-width: 768px) {
+  .timeline-content {
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  .timeline-icon {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .timeline-item-alt .timeline-content {
+    float: none;
+  }
+
+  .timeline-item-alt .timeline-icon {
+    position: static;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,61 @@
+.home {
+    position: relative;
+    display: block;
+    background-image: url('../../../assets/img/background.webp');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+  
+  .home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), #fff);
+  }
+  
+  .home .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .home .caption h1 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+  }
+  
+  .home .caption .tagline {
+    padding: 15px 40px;
+    background-color: #d7fdfb;
+    color: #3884ff;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .home .caption h2 {
+    color: #3884ff;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .home .caption h1 {
+      font-size: 2rem;
+    }
+  
+    .home .caption .tagline {
+      font-size: 16px;
+      padding: 10px 30px;
+      border-radius: 30px;
+    }
+  }
+  

@@ -1,0 +1,35 @@
+<!-- About me -->
+<section id="about-me" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="img-profile aos-animate aos-init aos-animate" data-aos="zoom-in">
+        <img src="../../assets/img/crixo.webp" alt="Photo Profile" />
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="caption aos-animate aos-init aos-animate" data-aos="fade-in-right">
+        <h2>Nicko Planel</h2>
+        <p>Fullstack Developer</p>
+        <p>
+          As a full-stack developer, I am constantly dedicated to improving my
+          skills and seeking new opportunities to learn and grow
+          professionally. My open-mindedness and strong passion for
+          computer science enable me to adapt quickly to new challenges and
+          technologies. I have demonstrated my ability to learn quickly
+          throughout my career, taking online courses and working on personal
+          projects to expand my knowledge. Staying up-to-date with the latest
+          trends is essential to me, so I am always willing to do whatever it
+          takes to achieve my professional goals. I strive to develop innovative
+          and efficient solutions, applying best practices and utilizing modern
+          tools in my projects. I am committed to the success of my clients and
+          team members, and I always seek to work collaboratively to achieve
+          the best results.
+        </p>
+        <div>
+          <button id="download-btn" class="btn btn-primary" (click)="downloadCV()">Download CV</button>
+          <a [hidden]="true" #pdfDownload href="../../assets/cv.pdf" download="cv.pdf">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

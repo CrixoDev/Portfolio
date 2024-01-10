@@ -1,0 +1,67 @@
+h2 {
+    margin: 3% auto;
+    font-size: 3.4rem;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+    margin-bottom: 4%;
+  }
+  
+  .card {
+    background-color: #d6eaf8;
+    margin: 1rem;
+    text-align: center;
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 18rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .fa-star {
+    color: #ffd700;
+    font-size: 2rem;
+  }
+  
+  .neon {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .neon:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffd700, 0 0 20px #ffd700,
+      0 0 25px #ffd700, 0 0 30px #ffd700;
+  }
+  
+  /* Estilos específicos para pantallas de escritorio */
+  @media screen and (min-width: 768px) {
+  
+    h5 {
+      font-size: 1.6rem;
+    }
+  
+    h6 {
+      font-size: 1.4rem;
+    }
+  
+    .card {
+      width: 350px; /* Ajusta el ancho según tus necesidades */
+    }
+  }
+  
