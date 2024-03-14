@@ -1,13 +1,13 @@
 <!-- About me -->
-<section id="about-me" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<section id="about-me" class="animate__animated animate__fadeInUp" style="animation-duration: 1000ms; animation-delay: 500ms;">
   <div class="row">
     <div class="col-md-6">
-      <div class="img-profile aos-animate aos-init aos-animate" data-aos="zoom-in">
+      <div class="img-profile animate__animated animate__zoomIn">
         <img src="../../assets/img/crixo.webp" alt="Photo Profile" />
       </div>
     </div>
     <div class="col-md-5">
-      <div class="caption aos-animate aos-init aos-animate" data-aos="fade-in-right">
+      <div class="caption animate__animated animate__fadeInRight">
         <h2>Nicko Planel</h2>
         <p>Fullstack Developer</p>
         <p>
@@ -26,8 +26,8 @@
           the best results.
         </p>
         <div>
-          <button id="download-btn" class="btn btn-primary" (click)="downloadCV()">Download CV</button>
-          <a [hidden]="true" #pdfDownload href="../../assets/cv.pdf" download="cv.pdf">Download</a>
+          <button id="download-btn" class="btn btn-primary" onclick="downloadCV()">Download CV</button>
+          <a style="display: none;" id="pdfDownload" href="../../assets/cv.pdf" download="cv.pdf">Download</a>
         </div>
       </div>
     </div>

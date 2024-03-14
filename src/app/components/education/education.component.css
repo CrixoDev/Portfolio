@@ -3,7 +3,16 @@ h2 {
     font-size: 3.4rem;
     text-align: center;
   }
+
+h3 {
+    margin: 3% auto;
+    font-size: 3.4rem;
+    text-align: center;
+  }
   
+a {
+  margin: 5%;
+}
   .row {
     display: flex;
     flex-wrap: wrap;
